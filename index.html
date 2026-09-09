@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>临江履新 · 城市治理模拟</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><button id="menu" aria-label="打开存档与帮助">☰</button><div class="brand">临江履新<span>城市治理模拟</span></div><div id="stats" class="stats"></div><button id="help">入职指南</button></header>
+<main><section class="world"><div class="worldbar"><div><strong id="location">临江镇</strong><span id="date"></span></div><button id="scenario">选择开局</button></div>
+<div class="viewbar"><button id="viewBrief">个人简报</button><button id="viewMap">基层地图</button><button id="viewRegion">辖区治理</button><button id="viewSystem">中央—地方体系</button><label>地图图层 <select id="layer"><option value="normal">城市建设</option><option value="roads">道路连通</option><option value="services">公共服务</option></select></label></div>
+<div id="briefview" hidden></div><div id="regional" hidden></div><div id="systemview" hidden></div><div id="mapview">
+<div class="mapcontrols"><strong id="mapsize"></strong><button id="mode3d">切换平面</button><button id="expandmap">扩展地图</button></div><div id="scene3d"></div><div id="flatmap" class="map-scroll"><div id="map" class="map" aria-label="城市建设地图"></div></div>
+<div class="mapnote"><span>北 ↑　临江河 →</span><span id="maphint">选择下方建筑，再点击空地动工。</span></div>
+<div id="tools" class="tools" aria-label="建设工具"></div><div class="funding"><label>建设资金 <select id="funding"><option value="general">一般财力 · 年度预算内</option><option value="special">专项项目 · 上报审核</option><option value="land">土地建设专账 · 限定用途</option></select></label><span>专项项目暂支持水厂、电站</span></div></div><div class="selection"><div id="selection"></div><div class="timecontrols"><button id="quarter">推进一季度</button><button id="next" class="primary">推进下月 →</button></div></div>
+</section>
+<aside><nav id="tabs" aria-label="政务菜单"></nav><div id="panel"></div></aside></main>
+<footer><span>架空城市 · 独立实现 · 所有金额以万元计</span><span id="savestatus">自动存档就绪</span><button id="save">导出存档</button><label class="filebutton">导入存档<input id="import" type="file" accept="application/json,.json"></label></footer>
+<div id="toast" role="status" aria-live="polite"></div><dialog id="dialog"><button id="close" class="close" aria-label="关闭">×</button><div id="dialogbody"></div></dialog>
+<script src="career.js"></script><script src="civic.js"></script><script src="staffing.js"></script><script src="profile.js"></script><script src="engine.js"></script><script src="career-ui.js"></script><script src="brief-ui.js"></script><script src="city3d.js"></script><script src="civic-ui.js"></script><script src="staffing-ui.js"></script><script src="app.js"></script></body></html>

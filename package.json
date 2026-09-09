@@ -1,0 +1,1 @@
+{"name":"linjiang-civic-sim","version":"7.0.0","private":true,"scripts":{"start":"node server.cjs","test":"node test.cjs && node career.test.cjs && node map.test.cjs && node civic.test.cjs && node staffing.test.cjs && node profile.test.cjs"}}
